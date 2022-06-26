@@ -1,0 +1,46 @@
+//The number of words and vowels  in the sentence
+//Ce bout de code va retourner le nombre de voyelle d'espace et meme de mots ,
+
+def nbMotVoyelle():
+Var
+    cons, voyelle, espc: entier;
+    s: string;
+    i:entier;
+ 
+Debut
+ 
+    cons := 0;
+    voyelle := 0;
+    espc := 0;
+ 
+    Pour i := 1 à length
+     Faire
+        Case s[i] 
+            Faire
+            Valeur('e' Ou 'i' Ou 'a' Ou 'u' Ou 'y' Ou 'o') Faire
+                voyelle := voyelle + 1;
+            Valeur('_') Faire
+                espc := espc + 1;
+            Sinon
+                cons := cons + 1;
+        FinCase
+    FinPour
+ 
+Fin.
+
+
+
+
+
+//find the sum of all distinct elements from the set
+
+def getUniqueElement1(Set1, Set2):
+Var
+    res:entier;
+Debut
+    res =0;
+    for a in Set1: res = res ^ a
+    for b in Set2: res = res ^ b
+    return res
+
+Fin
